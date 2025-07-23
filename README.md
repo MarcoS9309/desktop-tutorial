@@ -24,12 +24,3 @@ Explora la dimensión simbólica de la realidad a través de un prototipo intera
 
 ---
 
-## Paleta de diseño
-
-```txt
-Minimalismo cromático
-- Fondo sugerido: #FAFAFA o #F5F5F5
-- Texto: #222222 o #333333
-- Enlaces: #4A90E2 (azul suave)
-- Acento: #D4AF37 (dorado suave para destacar)
-
