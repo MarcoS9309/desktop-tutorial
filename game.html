@@ -3,58 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Juega al psicodrama teatral, virtual (BETA)</title>
-    <style>
-        body {
-            background-color: #1e1b18;
-            color: #f4f1ee;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-            padding: 2rem;
-        }
-        h1 {
-            color: #d6b96e;
-            font-size: 2.8rem;
-            text-shadow: 1px 1px #000;
-            margin-bottom: 1rem;
-        }
-        button {
-            background-color: #c2a86e;
-            color: #2e2e2e;
-            border: none;
-            padding: 0.9rem 2rem;
-            font-size: 1.1rem;
-            cursor: pointer;
-            margin: 1rem;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #aa8e54;
-        }
-        .output {
-            margin-top: 2rem;
-            font-size: 1.2rem;
-            font-style: italic;
-            color: #e6c690;
-        }
-        .section {
-            margin-top: 2.5rem;
-        }
-        .intro {
-            font-size: 1.15rem;
-            margin-bottom: 2rem;
-            color: #d8d2cb;
-            max-width: 750px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .footer {
-            margin-top: 3rem;
-            font-size: 1rem;
-            color: #a9a9a9;
-            font-style: italic;
-        }
-    </style>
+    <link rel="stylesheet" href="css/game.css">
 </head>
 <body>
     <h1>Juega al psicodrama teatral, virtual (BETA)</h1>
@@ -113,59 +62,6 @@ El público (sí, aunque sea uno solo) será quien perciba si realmente lo diste
         </p>
     </div>
 
-    <script>
-        const preguntas = [
-            "Imita una escena donde alguien te interrumpe constantemente y tú intentas mantener la calma.",
-            "Haz una escena donde pides perdón por algo que no hiciste. Usa solo gestos y mirada.",
-            "Representa el momento en que te viste en el espejo y no te reconociste. Hazlo lentamente.",
-            "Haz una escena donde hablas con tu yo del pasado y le das un consejo. Usa dos tonos de voz.",
-            "Imita a una persona que no quiere llorar, pero ya no puede evitarlo.",
-            "Haz de cuenta que estás en una estación de tren y te despides de alguien importante. Usa el cuerpo, no palabras.",
-            "Representa un día común como si fuera una tragedia griega.",
-            "Actúa como si tu cuerpo tuviera algo que decir, pero tu voz no lo deja.",
-            "Haz una escena donde el silencio te incomoda, y luego te acompaña.",
-            "Camina como si el suelo fuera recuerdo y cada paso contara algo que callaste."
-        ];
-
-        const recompensas = [
-            "Recibes un aplauso simbólico. Haz una reverencia sincera.",
-            "Se te permite elegir un nuevo rol escénico para explorar en el próximo acto.",
-            "Puedes sentarte en el 'trono del director' y dar una orden escénica al grupo.",
-            "Invoca una cita de Artaud y siéntete libre por 30 segundos.",
-            "Ganas el derecho a guardar silencio... dramáticamente, por un minuto.",
-            "Puedes usar una bufanda, bastón o elemento escénico como símbolo de poder durante el resto de la sesión.",
-            "Haz una caminata triunfal desde la puerta hasta el centro. El grupo te observa en silencio.",
-            "Escribe en tu cuaderno simbólico una frase que resuma tu escena. Léela o rómpela, según tu necesidad.",
-            "Puedes pedir a alguien del grupo que actúe una escena contigo, sin explicar nada previamente."
-        ];
-
-        const castigos = [
-            "Imita tu emoción más reprimida como si fuera una diva del teatro clásico.",
-            "Haz un soliloquio con la silla más cercana como tu único espectador.",
-            "Explora el gesto corporal de la vergüenza y transfórmalo en danza.",
-            "Actúa una escena de reconciliación contigo mismo en voz baja.",
-            "Haz un ritual de despedida de una emoción que ya no necesitas.",
-            "Cuenta hasta diez en silencio, respirando desde los dedos del pie hasta la coronilla.",
-            "Cierra los ojos un minuto. Luego abre los ojos como si despertaras de un recuerdo.",
-            "Haz una caminata lenta y dolorosa como si llevaras el peso de tu historia.",
-            "Imita cómo te sientes cuando no puedes expresar lo que sientes."
-        ];
-
-        function mostrarPregunta() {
-            const random = Math.floor(Math.random() * preguntas.length);
-            document.getElementById('pregunta').innerText = preguntas[random];
-            document.getElementById('resultado').innerText = "";
-        }
-
-        function mostrarRecompensa() {
-            const random = Math.floor(Math.random() * recompensas.length);
-            document.getElementById('resultado').innerText = "Recompensa: " + recompensas[random];
-        }
-
-        function mostrarCastigo() {
-            const random = Math.floor(Math.random() * castigos.length);
-            document.getElementById('resultado').innerText = "Transformación escénica: " + castigos[random];
-        }
-    </script>
+    <script src="js/game.js"></script>
 </body>
 </html>
