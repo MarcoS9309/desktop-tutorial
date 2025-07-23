@@ -1,6 +1,9 @@
-# Welcome to GitHub Desktop!
+# ¡Bienvenido a mi espacio virtual!
 
+Soy Marco y este es mi espacio, una especie de cuaderno digital donde comparto fragmentos de lo que estudio, pienso o experimento.  
+[Mi perfil en X](https://x.com/vinicio_salto).
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+En este repositorio encontrarás un prototipo llamado **"Juega al psicodrama teatral, virtual (BETA)"**.  
+Abre [game.html](game.html) para jugar y visita [index.html](index.html) para una breve introducción.
 
-Marco Vinicio
+Hecha por ***Marco Vinicio*** 
