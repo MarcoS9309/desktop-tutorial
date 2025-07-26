@@ -35,18 +35,19 @@ const castigos = [
     "Imita cómo te sientes cuando no puedes expresar lo que sientes."
 ];
 
+function obtenerAleatorio(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
 function mostrarPregunta() {
-    const random = Math.floor(Math.random() * preguntas.length);
-    document.getElementById('pregunta').innerText = preguntas[random];
+    document.getElementById('pregunta').innerText = obtenerAleatorio(preguntas);
     document.getElementById('resultado').innerText = "";
 }
 
 function mostrarRecompensa() {
-    const random = Math.floor(Math.random() * recompensas.length);
-    document.getElementById('resultado').innerText = "Recompensa: " + recompensas[random];
+    document.getElementById('resultado').innerText = "Recompensa: " + obtenerAleatorio(recompensas);
 }
 
 function mostrarCastigo() {
-    const random = Math.floor(Math.random() * castigos.length);
-    document.getElementById('resultado').innerText = "Transformación escénica: " + castigos[random];
+    document.getElementById('resultado').innerText = "Transformación escénica: " + obtenerAleatorio(castigos);
 }
