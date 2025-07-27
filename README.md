@@ -13,7 +13,7 @@ una especie de cuaderno digital donde comparto fragmentos de lo que estudio, pie
 
 ---
 
-## Proyecto destacado
+## Proyectos destacados
 
 ### **Juega al psicodrama teatral, virtual (BETA)**
 
@@ -21,6 +21,14 @@ Explora la dimensión simbólica de la realidad a través de un prototipo intera
 
 🔗 Abre [game.html](game.html) para jugar  
 📄 Visita [index.html](index.html) para una breve introducción
+
+---
+
+### **Fábulas emocionales**
+
+Un juego interactivo, en donde debes responder con tu estado emocional y de acuerdo a tu emoción la página te lleva a una fábula para reflexionar. 
+
+🔗 Ingresa [game.html](https://github.com/MarcoS9309/desktop-tutorial/blob/main/FabulasEmocionales/index.html) para jugar 
 
 ---
 
