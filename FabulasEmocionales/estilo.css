@@ -1,0 +1,40 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f4e7;
+    color: #333;
+    text-align: center;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.botones button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botones button:hover {
+    background-color: #ffd369;
+}
+
+#respuesta {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.propuesta {
+    margin-top: 1em;
+    font-style: italic;
+    color: #555;
+}
