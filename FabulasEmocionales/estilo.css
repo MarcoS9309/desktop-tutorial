@@ -1,40 +1,51 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f4e7;
+    font-family: 'Georgia', serif;
+    background-color: #fef9f0;
     color: #333;
     text-align: center;
     padding: 2em;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 1em;
+    color: #704214;
 }
 
 .botones button {
-    padding: 10px 20px;
-    margin: 10px;
+    padding: 12px 24px;
+    margin: 12px;
     font-size: 1em;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    background-color: #ffd369;
     cursor: pointer;
-    transition: background 0.3s;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
 }
 
 .botones button:hover {
-    background-color: #ffd369;
+    background-color: #fcbf49;
 }
 
 #respuesta {
     margin-top: 2em;
-    padding: 1em;
+    padding: 1.5em;
     background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    border: 2px dashed #e0a96d;
+    border-radius: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fabula {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 .propuesta {
     margin-top: 1em;
     font-style: italic;
-    color: #555;
+    color: #4a4a4a;
 }
