@@ -30,3 +30,8 @@ Juego interactivo en el que respondes con tu estado emocional y, según tu elecc
 🔗 Ingresa a [FabulasEmocionales/index.html](FabulasEmocionales/index.html) para jugar
 
 ---
+
+### **Proyecto intercultural para una comunidad reflexiva**
+Documentación de un proyecto que une arte, cultura y pedagogía para fomentar la inclusión y el pensamiento crítico.
+
+🔗 Consulta la carpeta [ProyectoIntercultural](ProyectoIntercultural) para conocer la metodología y las actividades sugeridas.
