@@ -1,68 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Juega al psicodrama teatral, virtual (BETA)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/game.css">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
+  <body>
     <h1>Juega al psicodrama teatral, virtual (BETA)</h1>
     <p class="intro">
-        Esta experiencia no es solo un juego, ni una terapia, ni una performance… es un ensayo con el alma. Inspirado libremente en los principios del psicodrama, mezclado con toques de teatro del absurdo y reglas arcaicas de recompensa y castigo, este ejercicio te invita a subir al escenario de tu interioridad sin libreto y sin red.
-        
-        ¿Cómo funciona? El actor pulsa una pregunta, la representa con honestidad (o lo que logre en ese momento), y el público —crítico, cómplice o víctima— decide si merece recompensa o castigo. No hay puntuación, solo interpretación. Lo importante aquí no es “ganar”, sino crear, encarnar, fracasar con estilo o romperse frente a otros sin dejar de ser personaje.
-
-        Todo es simbólico, todo es estético. Cada gesto puede ser ridículo o sublime, pero lo que importa es que sea verdadero. Que revele algo que no estaba escrito, algo que brota. Y si no brota, al menos que sea teatral. 
-
-        *Este prototipo fue creado por Marco como ejercicio artístico, pedagógico y emocional. Aún en fase BETA, aún sin escenario, aún latiendo en el ensayo.*
+      Esta experiencia no es solo un juego, ni una terapia, ni una performance…
+      es un ensayo con el alma. Inspirado libremente en los principios del
+      psicodrama, mezclado con toques de teatro del absurdo y reglas arcaicas de
+      recompensa y castigo, este ejercicio te invita a subir al escenario de tu
+      interioridad sin libreto y sin red. ¿Cómo funciona? El actor pulsa una
+      pregunta, la representa con honestidad (o lo que logre en ese momento), y
+      el público —crítico, cómplice o víctima— decide si merece recompensa o
+      castigo. No hay puntuación, solo interpretación. Lo importante aquí no es
+      “ganar”, sino crear, encarnar, fracasar con estilo o romperse frente a
+      otros sin dejar de ser personaje. Todo es simbólico, todo es estético.
+      Cada gesto puede ser ridículo o sublime, pero lo que importa es que sea
+      verdadero. Que revele algo que no estaba escrito, algo que brota. Y si no
+      brota, al menos que sea teatral. *Este prototipo fue creado por Marco como
+      ejercicio artístico, pedagógico y emocional. Aún en fase BETA, aún sin
+      escenario, aún latiendo en el ensayo.*
     </p>
 
     <div class="section">
-        <button onclick="mostrarPregunta()">Nueva Pregunta</button>
-        <div id="pregunta" class="output"></div>
+      <button onclick="mostrarPregunta()">Nueva Pregunta</button>
+      <div id="pregunta" class="output"></div>
     </div>
 
     <div class="section">
-        <p><strong>¿La encarnaste con verdad o temblaste en la escena?</strong><br>
-¿Encarnaste la emoción o solo la enunciaste? ¿Permitiste que tu cuerpo hablara o te quedaste en la mente? Esta decisión no es sobre si fue "buena o mala actuación", sino si fue una acción sincera en el plano expresivo. Como propuso Sokolov, cada gesto en escena nace de una imagen interna, un impulso simbólico que emerge desde el fondo emocional, muchas veces inconsciente. Actuar con autenticidad implica dejar que esa imagen se manifieste sin censura estética.<br><br>
-Quien responde debe actuar. Hazlo como si el escenario fuera tu propia memoria. Que el movimiento, el tono, el silencio o incluso la torpeza se conviertan en formas de verdad.
-<br><br>
-El público (sí, aunque sea uno solo) será quien perciba si realmente lo diste todo o si quedaste atrapado entre lo que pensabas hacer y lo que lograste expresar. ¿Fue auténtico? ¿Fue teatral? ¿Fue tuyo?
-</p>
-        <button onclick="mostrarRecompensa()">Actué con autenticidad</button>
-        <button onclick="mostrarCastigo()">No actué con autenticidad / Me derrumbé emocionalmente</button>
-        <div id="resultado" class="output"></div>
+      <p>
+        <strong>¿La encarnaste con verdad o temblaste en la escena?</strong
+        ><br />
+        ¿Encarnaste la emoción o solo la enunciaste? ¿Permitiste que tu cuerpo
+        hablara o te quedaste en la mente? Esta decisión no es sobre si fue
+        "buena o mala actuación", sino si fue una acción sincera en el plano
+        expresivo. Como propuso Sokolov, cada gesto en escena nace de una imagen
+        interna, un impulso simbólico que emerge desde el fondo emocional,
+        muchas veces inconsciente. Actuar con autenticidad implica dejar que esa
+        imagen se manifieste sin censura estética.<br /><br />
+        Quien responde debe actuar. Hazlo como si el escenario fuera tu propia
+        memoria. Que el movimiento, el tono, el silencio o incluso la torpeza se
+        conviertan en formas de verdad.
+        <br /><br />
+        El público (sí, aunque sea uno solo) será quien perciba si realmente lo
+        diste todo o si quedaste atrapado entre lo que pensabas hacer y lo que
+        lograste expresar. ¿Fue auténtico? ¿Fue teatral? ¿Fue tuyo?
+      </p>
+      <button onclick="mostrarRecompensa()">Actué con autenticidad</button>
+      <button onclick="mostrarCastigo()">
+        No actué con autenticidad / Me derrumbé emocionalmente
+      </button>
+      <div id="resultado" class="output"></div>
     </div>
 
     <div class="section">
-        <h2>Expresión en otros lenguajes</h2>
-        <p>
-            Este ejercicio también puede representarse mediante dibujo, música, danza, poesía o lo que sientas más afín a tu forma de expresión.
-            Puedes dibujar tu respuesta como si fueras Guayasamín con rabia contenida, o bailarla como un fandango en duelo; puedes cantarla, escribirla como carta jamás enviada o transformarla en objeto simbólico. Lo importante es no callar.
-        </p>
+      <h2>Expresión en otros lenguajes</h2>
+      <p>
+        Este ejercicio también puede representarse mediante dibujo, música,
+        danza, poesía o lo que sientas más afín a tu forma de expresión. Puedes
+        dibujar tu respuesta como si fueras Guayasamín con rabia contenida, o
+        bailarla como un fandango en duelo; puedes cantarla, escribirla como
+        carta jamás enviada o transformarla en objeto simbólico. Lo importante
+        es no callar.
+      </p>
     </div>
 
     <div class="section">
-        <h2>Recursos para el actor emocional</h2>
-        <p>Si necesitas inspiración para representar escenas de llanto, dolor o vulnerabilidad emocional, puedes explorar los siguientes ejemplos audiovisuales. Obsérvalos con atención al gesto, al ritmo, al silencio y la respiración:</p>
-        <ul style="text-align: left; max-width: 750px; margin: 1rem auto; font-size: 1rem; line-height: 1.6;">
-            <li><strong>Transformación emocional teatral (Actriz en lágrimas):</strong> <a href="https://www.youtube.com/watch?v=FDFdroN7d0w&t=3s" target="_blank" rel="noopener noreferrer">Ver video</a></li>
-            <li><strong>1917 - Monólogo final (vulnerabilidad y mirada):</strong> <a href="https://www.youtube.com/watch?v=itdC-ZKti04&t=1s" target="_blank" rel="noopener noreferrer">Ver video</a></li>
-            <li><strong>Llanto silencioso (Interstellar):</strong> <a href="https://www.youtube.com/watch?v=GIUhpzv47YQ" target="_blank" rel="noopener noreferrer">Ver video</a></li>
-            <li><strong>Monólogo en espejo (introspección):</strong> <a href="https://www.youtube.com/watch?v=UnoE8M5qbrk" target="_blank" rel="noopener noreferrer">Ver video</a></li>
-        </ul>
-        <p style="font-style: italic; color: #bbb;">Recuerda: no se trata de imitar, sino de sentir, respirar y permitir que lo tuyo emerja desde dentro.</p>
+      <h2>Recursos para el actor emocional</h2>
+      <p>
+        Si necesitas inspiración para representar escenas de llanto, dolor o
+        vulnerabilidad emocional, puedes explorar los siguientes ejemplos
+        audiovisuales. Obsérvalos con atención al gesto, al ritmo, al silencio y
+        la respiración:
+      </p>
+      <ul
+        style="
+          text-align: left;
+          max-width: 750px;
+          margin: 1rem auto;
+          font-size: 1rem;
+          line-height: 1.6;
+        "
+      >
+        <li>
+          <strong
+            >Transformación emocional teatral (Actriz en lágrimas):</strong
+          >
+          <a
+            href="https://www.youtube.com/watch?v=FDFdroN7d0w&t=3s"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver video</a
+          >
+        </li>
+        <li>
+          <strong>1917 - Monólogo final (vulnerabilidad y mirada):</strong>
+          <a
+            href="https://www.youtube.com/watch?v=itdC-ZKti04&t=1s"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver video</a
+          >
+        </li>
+        <li>
+          <strong>Llanto silencioso (Interstellar):</strong>
+          <a
+            href="https://www.youtube.com/watch?v=GIUhpzv47YQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver video</a
+          >
+        </li>
+        <li>
+          <strong>Monólogo en espejo (introspección):</strong>
+          <a
+            href="https://www.youtube.com/watch?v=UnoE8M5qbrk"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver video</a
+          >
+        </li>
+      </ul>
+      <p style="font-style: italic; color: #bbb">
+        Recuerda: no se trata de imitar, sino de sentir, respirar y permitir que
+        lo tuyo emerja desde dentro.
+      </p>
     </div>
 
     <div class="footer">
-        <p>
-            Este espacio lúdico pone en práctica principios del psicodrama: espontaneidad, representación simbólica y expresión de roles ocultos. 
-            Úsalo como herramienta pedagógica, terapéutica o simplemente como ritual escénico para liberar tensiones internas. 
-            Porque en el arte, cada caída es también una forma de vuelo... y todo colapso emocional, bien actuado, puede aspirar a convertirse en tesis.
-        </p>
+      <p>
+        Este espacio lúdico pone en práctica principios del psicodrama:
+        espontaneidad, representación simbólica y expresión de roles ocultos.
+        Úsalo como herramienta pedagógica, terapéutica o simplemente como ritual
+        escénico para liberar tensiones internas. Porque en el arte, cada caída
+        es también una forma de vuelo... y todo colapso emocional, bien actuado,
+        puede aspirar a convertirse en tesis.
+      </p>
     </div>
 
     <script src="js/game.js"></script>
-</body>
+  </body>
 </html>
