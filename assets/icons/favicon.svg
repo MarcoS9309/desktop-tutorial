@@ -1,0 +1,9 @@
+<!-- Favicon generado para el teatro/arte -->
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" fill="#d6b96e"/>
+  <path d="M8 12c0-2 2-4 6-4s6 2 6 4c0 1-1 2-2 2h-8c-1 0-2-1-2-2z" fill="#1e1b18"/>
+  <path d="M18 12c0-2 2-4 6-4s6 2 6 4c0 1-1 2-2 2h-8c-1 0-2-1-2-2z" fill="#1e1b18"/>
+  <circle cx="10" cy="20" r="1" fill="#1e1b18"/>
+  <circle cx="22" cy="20" r="1" fill="#1e1b18"/>
+  <path d="M10 24c0-2 2-2 6-2s6 0 6 2" stroke="#1e1b18" stroke-width="1" fill="none"/>
+</svg>

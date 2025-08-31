@@ -2,18 +2,59 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Fábulas Emocionales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fábulas Emocionales | Marco Vinicio - Sabiduría Adaptada a tu Estado</title>
+    <meta name="description" content="Fábulas interactivas de Esopo adaptadas por Marco Vinicio. Descubre sabiduría clásica que se adapta a tu estado emocional actual." />
+    <meta name="keywords" content="fábulas, Esopo, emociones, sabiduría, reflexión, Marco Vinicio, cuentos, moraleja" />
+    <meta name="author" content="Marco Vinicio" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fábulas Emocionales - Sabiduría Adaptativa" />
+    <meta property="og:description" content="Fábulas clásicas que se adaptan a tu estado emocional" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://marcos9309.github.io/desktop-tutorial/FabulasEmocionales/" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:title" content="Fábulas Emocionales" />
+    <meta property="twitter:description" content="Sabiduría de Esopo adaptada a tu estado emocional" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg" />
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://marcos9309.github.io/desktop-tutorial/FabulasEmocionales/" />
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
-    <h1>¿Cómo te sientes hoy?</h1>
-    <div class="botones">
-      <button onclick="mostrarFabula('bien')">Bien 😊</button>
-      <button onclick="mostrarFabula('mal')">Mal 😞</button>
+    <div class="container">
+      <header>
+        <h1>¿Cómo te sientes hoy?</h1>
+        <p class="subtitulo">Descubre una fábula adaptada a tu estado emocional</p>
+      </header>
+
+      <main>
+        <div class="botones">
+          <button onclick="mostrarFabula('bien')" data-estado="bien">
+            <span class="emoji">😊</span>
+            <span class="texto">Me siento bien</span>
+          </button>
+          <button onclick="mostrarFabula('mal')" data-estado="mal">
+            <span class="emoji">😞</span>
+            <span class="texto">No me siento bien</span>
+          </button>
+        </div>
+
+        <div id="respuesta"></div>
+      </main>
+
+      <footer>
+        <p><em>Fábulas clásicas de Esopo, adaptadas por Marco Vinicio</em></p>
+      </footer>
     </div>
 
-    <div id="respuesta"></div>
-
     <script src="app.js"></script>
+    <script src="../js/navigation.js"></script>
   </body>
 </html>

@@ -2,22 +2,109 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Marco - Espacio Virtual</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marco Vinicio - Portafolio Digital | Arte, Pedagogía y Experimentación</title>
+    <meta name="description" content="Espacio digital de Marco Vinicio donde confluyen arte, pedagogía y experimentación creativa. Proyectos interactivos de psicodrama, fábulas emocionales y metodologías educativas." />
+    <meta name="keywords" content="Marco Vinicio, portafolio, arte digital, pedagogía, psicodrama, fábulas, teatro, educación, javascript" />
+    <meta name="author" content="Marco Vinicio" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://marcos9309.github.io/desktop-tutorial/" />
+    <meta property="og:title" content="Marco Vinicio - Portafolio Digital" />
+    <meta property="og:description" content="Espacio digital donde arte, pedagogía y experimentación convergen" />
+    <meta property="og:image" content="https://marcos9309.github.io/desktop-tutorial/assets/images/og-image.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://marcos9309.github.io/desktop-tutorial/" />
+    <meta property="twitter:title" content="Marco Vinicio - Portafolio Digital" />
+    <meta property="twitter:description" content="Espacio digital donde arte, pedagogía y experimentación convergen" />
+    <meta property="twitter:image" content="https://marcos9309.github.io/desktop-tutorial/assets/images/og-image.png" />
+    <meta property="twitter:creator" content="@vinicio_salto" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://marcos9309.github.io/desktop-tutorial/" />
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/variables.css" as="style" />
+    <link rel="preload" href="js/navigation.js" as="script" />
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Marco Vinicio",
+      "jobTitle": "Educador, Artista y Desarrollador",
+      "url": "https://marcos9309.github.io/desktop-tutorial/",
+      "sameAs": [
+        "https://x.com/vinicio_salto"
+      ],
+      "knowsAbout": [
+        "Psicodrama",
+        "Pedagogía",
+        "Arte Digital",
+        "Teatro",
+        "Desarrollo Web"
+      ]
+    }
+    </script>
   </head>
   <body>
-    <h1>¡Bienvenido a mi espacio virtual!</h1>
-    <section>
-      <h2>Acerca de mí</h2>
-      <p>
-        Soy Marco y este es mi espacio, una especie de cuaderno digital donde
-        comparto fragmentos de lo que estudio, pienso o experimento.
-        <a href="https://x.com/vinicio_salto">Mi perfil en X</a>.
-      </p>
-    </section>
-    <nav>
-      <p><a href="game.html">Ir al juego principal</a></p>
-    </nav>
+    <div class="container">
+      <header>
+        <h1>¡Bienvenido a mi espacio virtual!</h1>
+      </header>
+      
+      <main>
+        <section>
+          <h2>Acerca de mí</h2>
+          <p>
+            Soy <strong>Marco Vinicio</strong> y este es mi espacio: una especie de cuaderno digital donde
+            comparto fragmentos de lo que estudio, pienso o experimento.
+            <a href="https://x.com/vinicio_salto" target="_blank" rel="noopener">Sígueme en X</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>Proyectos Destacados</h2>
+          
+          <div class="proyecto-card">
+            <h3>🎭 Psicodrama Virtual (BETA)</h3>
+            <p>Explora la dimensión simbólica de la realidad a través de un prototipo interactivo de teatro emocional.</p>
+            <a href="game.html" class="btn-proyecto">Comenzar experiencia</a>
+          </div>
+
+          <div class="proyecto-card">
+            <h3>📚 Fábulas Emocionales</h3>
+            <p>Juego interactivo donde respondes con tu estado emocional y accedes a fábulas para reflexionar.</p>
+            <a href="FabulasEmocionales/index.html" class="btn-proyecto">Explorar fábulas</a>
+          </div>
+
+          <div class="proyecto-card">
+            <h3>🌍 Proyecto Intercultural</h3>
+            <p>Documentación de un proyecto que une arte, cultura y pedagogía para fomentar inclusión y pensamiento crítico.</p>
+            <a href="ProyectoIntercultural/index.html" class="btn-proyecto">Ver metodología</a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          <em>Un espacio minimalista, claro y lleno de ideas.</em><br>
+          © 2025 Marco Vinicio - Todos los proyectos son de código abierto
+        </p>
+      </footer>
+    </div>
+
+    <script src="js/navigation.js"></script>
   </body>
 </html>

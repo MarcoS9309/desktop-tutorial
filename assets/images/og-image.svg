@@ -1,0 +1,36 @@
+<!-- Placeholder para Open Graph Image -->
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef9f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f4ee;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Main content -->
+  <text x="600" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="48" font-weight="bold" fill="#704214">
+    Marco Vinicio
+  </text>
+  
+  <text x="600" y="260" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#666">
+    Portafolio Digital
+  </text>
+  
+  <text x="600" y="320" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#888">
+    Arte • Pedagogía • Experimentación
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="150" r="40" fill="#ffd369" opacity="0.6"/>
+  <circle cx="1000" cy="480" r="60" fill="#d6b96e" opacity="0.4"/>
+  <rect x="100" y="400" width="80" height="80" rx="10" fill="#fcbf49" opacity="0.5"/>
+  <rect x="950" y="100" width="60" height="60" rx="8" fill="#e0a96d" opacity="0.6"/>
+  
+  <!-- Bottom info -->
+  <text x="600" y="550" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#999">
+    Proyectos interactivos de teatro emocional y sabiduría adaptativa
+  </text>
+</svg>

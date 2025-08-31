@@ -1,0 +1,91 @@
+/* Sistema de Variables CSS - Marco's Design System */
+
+:root {
+  /* Paleta de colores principal */
+  --primary-dark: #1e1b18;
+  --primary-light: #fef9f0;
+  --accent-gold: #d6b96e;
+  --accent-warm: #ffd369;
+  --accent-brown: #704214;
+  --text-light: #f4f1ee;
+  --text-dark: #333;
+  --text-muted: #a9a9a9;
+  --border-accent: #e0a96d;
+  
+  /* Tipografías */
+  --font-primary: "Georgia", serif;
+  --font-mono: "Courier New", Courier, monospace;
+  --font-sans: Arial, sans-serif;
+  
+  /* Espaciado */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+  --spacing-xxl: 3rem;
+  
+  /* Tamaños de fuente */
+  --font-sm: 1rem;
+  --font-md: 1.1rem;
+  --font-lg: 1.2rem;
+  --font-xl: 2.2rem;
+  --font-xxl: 2.8rem;
+  
+  /* Sombras y efectos */
+  --shadow-light: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 1px 1px #000;
+  --border-radius: 5px;
+  --border-radius-lg: 10px;
+  --border-radius-xl: 15px;
+  
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  
+  /* Breakpoints para responsive */
+  --mobile: 768px;
+  --tablet: 1024px;
+}
+
+/* Reset básico mejorado */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Clases utilitarias responsive */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.text-center { text-align: center; }
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mt-lg { margin-top: var(--spacing-lg); }
+.mt-xl { margin-top: var(--spacing-xl); }
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .hide-mobile { display: none; }
+  .container { padding: 0 var(--spacing-sm); }
+}
+
+@media (min-width: 769px) {
+  .show-mobile { display: none; }
+}
