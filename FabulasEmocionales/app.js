@@ -30,23 +30,10 @@ class FabulasEmocionales {
       "Practica respiración consciente: 4 segundos inhalar, 4 mantener, 4 exhalar.",
       "Cierra los ojos e imagina a alguien sabio que te aconseja desde dentro."
     ];
-
-    this.init();
   }
 
   init() {
-    this.bindEvents();
-  }
-
-  bindEvents() {
-    // Event delegation mejorado
-    document.addEventListener('click', (e) => {
-      if (e.target.matches('[onclick*="mostrarFabula"]')) {
-        e.preventDefault();
-        const estado = e.target.textContent.includes('Bien') ? 'bien' : 'mal';
-        this.mostrarFabula(estado);
-      }
-    });
+    // Initialize without event delegation since we use onclick
   }
 
   obtenerAleatorio(arr) {
@@ -89,16 +76,21 @@ class FabulasEmocionales {
   }
 }
 
+// Global instance
+let fabulasInstance = null;
+
 // Funciones globales para compatibilidad
 function mostrarFabula(estado) {
-  if (!window.fabulasInstance) {
-    window.fabulasInstance = new FabulasEmocionales();
+  if (!fabulasInstance) {
+    fabulasInstance = new FabulasEmocionales();
   }
-  window.fabulasInstance.mostrarFabula(estado);
+  fabulasInstance.mostrarFabula(estado);
 }
 
-// Inicialización
-document.addEventListener('DOMContentLoaded', () => {
-  window.fabulasInstance = new FabulasEmocionales();
-  console.log('📚 Fábulas Emocionales iniciado');
-});
+// Manual initialization function
+function initFabulas() {
+  if (!fabulasInstance) {
+    fabulasInstance = new FabulasEmocionales();
+    fabulasInstance.init();
+  }
+}

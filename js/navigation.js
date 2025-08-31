@@ -6,34 +6,37 @@
 
 class MarcoNavigation {
   constructor() {
+    // Determine the base path based on current location
+    const isInSubfolder = window.location.pathname.includes('/FabulasEmocionales/') || 
+                         window.location.pathname.includes('/ProyectoIntercultural/');
+    const basePath = isInSubfolder ? '../' : './';
+    
     this.proyectos = [
       {
         nombre: "Inicio",
-        url: "/index.html",
+        url: basePath + "index.html",
         descripcion: "Página principal del portafolio",
         icono: "🏠"
       },
       {
         nombre: "Psicodrama Virtual",
-        url: "/game.html",
+        url: basePath + "game.html",
         descripcion: "Juego de teatro emocional",
         icono: "🎭"
       },
       {
         nombre: "Fábulas Emocionales",
-        url: "/FabulasEmocionales/index.html",
+        url: basePath + "FabulasEmocionales/index.html",
         descripcion: "Fábulas adaptativas según tu estado",
         icono: "📚"
       },
       {
         nombre: "Proyecto Intercultural",
-        url: "/ProyectoIntercultural/index.html",
+        url: basePath + "ProyectoIntercultural/index.html",
         descripcion: "Arte, cultura y pedagogía",
         icono: "🌍"
       }
     ];
-    
-    this.init();
   }
 
   init() {
@@ -227,7 +230,7 @@ class MarcoNavigation {
   }
 }
 
-// Auto-inicialización cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', () => {
-  new MarcoNavigation();
-});
+// Manual initialization function
+function initNavigation() {
+  new MarcoNavigation().init();
+}

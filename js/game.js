@@ -49,25 +49,11 @@ class PsicodramaGame {
       transformacionesRealizadas: 0
     };
 
-    this.init();
-  }
-
-  init() {
-    this.bindEvents();
     this.cargarEstadisticas();
   }
 
-  bindEvents() {
-    // Event delegation para mejor performance
-    document.addEventListener('click', (e) => {
-      if (e.target.matches('[data-action="nueva-pregunta"]')) {
-        this.mostrarPregunta();
-      } else if (e.target.matches('[data-action="recompensa"]')) {
-        this.mostrarRecompensa();
-      } else if (e.target.matches('[data-action="castigo"]')) {
-        this.mostrarCastigo();
-      }
-    });
+  init() {
+    this.cargarEstadisticas();
   }
 
   obtenerAleatorio(arr) {
@@ -171,9 +157,10 @@ class PsicodramaGame {
   }
 }
 
-// Funciones globales para compatibilidad con HTML existente
-let gameInstance;
+// Global instance
+let gameInstance = null;
 
+// Funciones globales para compatibilidad con HTML existente
 function mostrarPregunta() {
   if (!gameInstance) gameInstance = new PsicodramaGame();
   gameInstance.mostrarPregunta();
@@ -189,8 +176,10 @@ function mostrarCastigo() {
   gameInstance.mostrarCastigo();
 }
 
-// Inicialización cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', () => {
-  gameInstance = new PsicodramaGame();
-  console.log('🎭 Psicodrama Virtual iniciado');
-});
+// Manual initialization function
+function initGame() {
+  if (!gameInstance) {
+    gameInstance = new PsicodramaGame();
+    gameInstance.init();
+  }
+}
