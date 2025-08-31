@@ -41,15 +41,12 @@ const propuestas = [
 function mostrarFabula(estado) {
   const fabula =
     fabulas[estado][Math.floor(Math.random() * fabulas[estado].length)];
-  const propuesta =
-    estado === "mal"
-      ? propuestas[Math.floor(Math.random() * propuestas.length)]
-      : "";
+  const propuesta = propuestas[Math.floor(Math.random() * propuestas.length)];
   document.getElementById("respuesta").innerHTML = `
         <div class="fabula">
             <h2>Fábula del día:</h2>
             <p>${fabula}</p>
-            ${propuesta ? `<p class="propuesta"><strong>¿Una idea para ti?</strong><br>${propuesta}</p>` : ""}
+            <p class="propuesta"><strong>¿Una idea para ti?</strong><br>${propuesta}</p>
         </div>
     `;
 }
